@@ -42,3 +42,14 @@ class Solution:
         return -1 if ans == inf else ans
         
 ```
+
+***Triple binary search***
+
+https://leetcode.com/problems/find-in-mountain-array/discuss/928558/Divide-and-conquer-Simple-stategy
+
+* Step 1 - Identify the mountain peak (using binary search)
+* Step 2 - Divide the mountain into ascending and descending slopes : 0...PEAK and PEAK....N
+* Step 3 - Perform binary search on ascending first, and then descending slope.
+
+Runtime - LogN
+
