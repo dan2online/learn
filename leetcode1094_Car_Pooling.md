@@ -15,6 +15,22 @@ class Solution:
         return max_num <= capacity
 ```
 
+
+```python
+class Solution:
+    def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
+        trip_num = [0] * 1001
+        for num, start, end in trips:
+            trip_num[start] += num
+            trip_num[end] -= num
+         
+        needed = 0
+        for num in trip_num:
+            needed += num
+            if needed > capacity: return False
+        return True
+```
+
 **priority queue**
 
 ```python
