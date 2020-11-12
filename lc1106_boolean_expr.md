@@ -42,3 +42,6 @@ class Solution:
         return stack[-1] if stack else False
                             
 ```
+
+
+[similar to lc1096_brace_expansion2](lc1096_brace_expansion2.md)
